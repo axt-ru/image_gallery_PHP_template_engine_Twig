@@ -1,0 +1,14 @@
+<html>
+  <head>
+  <title>{{title}}</title>
+  </head>
+  <style>
+    body { background: url(images/back.jpg); }
+  </style>
+  <body>
+   <center><h1 style="color: red;">{{title}}</h1></center>
+   {% for image in images %}
+        <div style="display: inline;"><a href="image.php?image={{image}}"><img src="{{preview}}/{{image}}"></a></div>
+   {% endfor %}
+  </body>
+</html>
